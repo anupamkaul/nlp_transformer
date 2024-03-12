@@ -16,9 +16,16 @@ Since each dataset has a name, let's load up one and see what it has
 
 from datasets import load_dataset
 
+'''
 arxiv_dataset = load_dataset("arxiv_dataset")
-
 print(arxiv_dataset)
+'''
+'''
+emotions = load_dataset("emotion")
+'''
+
+acronym_identification = load_dataset("acronym_identification")
+
 
 
 
