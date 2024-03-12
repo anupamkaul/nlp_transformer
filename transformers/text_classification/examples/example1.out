@@ -1,0 +1,27 @@
+Using custom data configuration default
+There are 118297 datasets currently available on the hub
+The first 50 are: ['acronym_identification', 'ade_corpus_v2', 'UCLNLP/adversarial_qa', 'aeslc', 'afrikaans_ner_corpus', 'ag_news', 'allenai/ai2_arc', 'air_dialogue', 'ajgt_twitter_ar', 'allegro_reviews', 'allocine', 'alt', 'amazon_polarity', 'amazon_reviews_multi', 'amazon_us_reviews', 'ambig_qa', 'nala-cub/americas_nli', 'ami', 'amttl', 'facebook/anli', 'app_reviews', 'aqua_rat', 'aquamuse', 'bigIR/ar_cov19', 'ar_res_reviews', 'ar_sarcasm', 'arabic_billion_words', 'arabic_pos_dialect', 'arabic_speech_corpus', 'arcd', 'arsentd_lev', 'art', 'arxiv_dataset', 'ascent_kb', 'aslg_pc12', 'asnq', 'facebook/asset', 'assin', 'assin2', 'atomic', 'autshumato', 'facebook/babi_qa', 'banking77', 'bbaw_egyptian', 'bbc_hindi_nli', 'bc2gm_corpus', 'beans', 'best2009', 'Helsinki-NLP/bianet', 'bible_para']
+Downloading and preparing dataset arxiv_dataset/default (download: Unknown size, generated: 2.09 GiB, post-processed: Unknown size, total: 2.09 GiB) to /Users/anupkaul/.cache/huggingface/datasets/arxiv_dataset/default/1.1.0/844a2ea61253031a2f9793b1832c0732c722467d904457e2597d61ea5c6f3c0c...
+Traceback (most recent call last):
+  File "/Users/anupkaul/akaul_git/nlp_transformer/transformers/text_classification/examples/example1_datasets.py", line 19, in <module>
+    arxiv_dataset = load_dataset("arxiv_dataset")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/anaconda3/lib/python3.11/site-packages/datasets/load.py", line 1664, in load_dataset
+    builder_instance.download_and_prepare(
+  File "/usr/local/anaconda3/lib/python3.11/site-packages/datasets/builder.py", line 575, in download_and_prepare
+    self._check_manual_download(dl_manager)
+  File "/usr/local/anaconda3/lib/python3.11/site-packages/datasets/builder.py", line 613, in _check_manual_download
+    raise ManualDownloadError(
+datasets.builder.ManualDownloadError: The dataset arxiv_dataset with config default requires manual data.
+                    Please follow the manual download instructions:
+                         You need to go to https://www.kaggle.com/Cornell-University/arxiv,
+    and manually download the dataset. Once it is completed,
+    a zip folder named archive.zip will be appeared in your Downloads folder
+    or whichever folder your browser chooses to save files to. Extract that folder
+    and you would get a arxiv-metadata-oai-snapshot.json file
+    You can then move that file under <path/to/folder>.
+    The <path/to/folder> can e.g. be "~/manual_data".
+    arxiv_dataset can then be loaded using the following command `datasets.load_dataset("arxiv_dataset", data_dir="<path/to/folder>")`.
+
+                    Manual data can be loaded with:
+                     datasets.load_dataset(arxiv_dataset, data_dir='<path/to/manual/data>')
