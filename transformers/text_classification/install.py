@@ -28,6 +28,7 @@ def install_requirements(
         cmd.append("requirements.txt")
     process_install = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     if process_install.returncode != 0:
+        print("cmd for subprocess: ", cmd, "\n")
         raise Exception("😭 Failed to install base requirements")
     else:
         print("✅ Base requirements installed!")
