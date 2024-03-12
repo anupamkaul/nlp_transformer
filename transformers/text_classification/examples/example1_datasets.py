@@ -43,6 +43,10 @@ print(train_ds[0])   # print the first row
 print("\nprint the first 10 2nd elements..")
 print(train_ds[:10]) # iterate over the first 10 2nd elements..
 
+print(train_ds["tokens"][:10]) # iterate over the first 10 2nd elements..
+print(train_ds["id"][:10]) # iterate over the first 10 2nd elements..
+print(train_ds["labels"][:10]) # iterate over the first 10 2nd elements..
+
 
 
 
