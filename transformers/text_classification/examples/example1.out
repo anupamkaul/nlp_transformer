@@ -1,5 +1,22 @@
 Using custom data configuration default
 Reusing dataset acronym_identification (/Users/anupkaul/.cache/huggingface/datasets/acronym_identification/default/1.0.0/e84facf8db848a4c7aa58addbebaf8a161c4146ca367e923ca972673cc915425)
-There are 118298 datasets currently available on the hub
-The first 50 are: ['acronym_identification', 'ade_corpus_v2', 'UCLNLP/adversarial_qa', 'aeslc', 'afrikaans_ner_corpus', 'ag_news', 'allenai/ai2_arc', 'air_dialogue', 'ajgt_twitter_ar', 'allegro_reviews', 'allocine', 'alt', 'amazon_polarity', 'amazon_reviews_multi', 'amazon_us_reviews', 'ambig_qa', 'nala-cub/americas_nli', 'ami', 'amttl', 'facebook/anli', 'app_reviews', 'aqua_rat', 'aquamuse', 'bigIR/ar_cov19', 'ar_res_reviews', 'ar_sarcasm', 'arabic_billion_words', 'arabic_pos_dialect', 'arabic_speech_corpus', 'arcd', 'arsentd_lev', 'art', 'arxiv_dataset', 'ascent_kb', 'aslg_pc12', 'asnq', 'facebook/asset', 'assin', 'assin2', 'atomic', 'autshumato', 'facebook/babi_qa', 'banking77', 'bbaw_egyptian', 'bbc_hindi_nli', 'bc2gm_corpus', 'beans', 'best2009', 'Helsinki-NLP/bianet', 'bible_para']
-  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 438.99it/s]
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 55.63it/s]
+DatasetDict({
+    train: Dataset({
+        features: ['id', 'tokens', 'labels'],
+        num_rows: 14006
+    })
+    validation: Dataset({
+        features: ['id', 'tokens', 'labels'],
+        num_rows: 1717
+    })
+    test: Dataset({
+        features: ['id', 'tokens', 'labels'],
+        num_rows: 1750
+    })
+})
+print the first row of training data: 
+{'id': 'TR-0', 'tokens': ['What', 'is', 'here', 'called', 'controlled', 'natural', 'language', '(', 'CNL', ')', 'has', 'traditionally', 'been', 'given', 'many', 'different', 'names', '.'], 'labels': [4, 4, 4, 4, 0, 2, 2, 4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4]}
+
+print the first 10 2nd elements..
+{'id': ['TR-0', 'TR-1', 'TR-2', 'TR-3', 'TR-4', 'TR-5', 'TR-6', 'TR-7', 'TR-8', 'TR-9'], 'tokens': [['What', 'is', 'here', 'called', 'controlled', 'natural', 'language', '(', 'CNL', ')', 'has', 'traditionally', 'been', 'given', 'many', 'different', 'names', '.'], ['In', 'this', 'paper', ',', 'we', 'introduce', 'CoQA', ',', 'a', 'Conversational', 'Question', 'Answering', 'dataset', 'for', 'measuring', 'the', 'ability', 'of', 'machines', 'to', 'participate', 'in', 'a', 'question', '-', 'answering', 'style', 'conversation', '.'], ['in', ':', 'Proceedings', 'of', 'SODA', '98', ',', 'Ninth', 'Annual', 'ACM', '-', 'SIAM', 'Symposium', 'on', 'Discrete', 'Algorithms', ',', 'San', 'Francisco', ',', 'CA', ',', 'USA', ',', '1998', ',', 'pp', '.'], ['But', 'is', 'the', 'existing', 'HPC', 'I', '/', 'O', 'stack', 'still', 'suitable', 'for', 'new', 'NVM', 'devices', 'like', 'Intel', 'Optane', '?'], ['For', 'a', 'fixed', 'and', 'known', ',', 'we', 'apply', 'a', 'successive', 'convex', 'approximation', '(', 'SCA', ')', 'approach', 'to', 'transform', 'the', 'non', '-', 'convex', 'problem', 'into', 'a', 'sequence', 'of', 'relaxed', 'convex', 'subproblems', '.'], ['Section', 'II', 'introduces', 'issues', 'relevant', 'to', 'VMP', '.'], ['A', 'near', 'optimal', 'solution', 'is', 'proposed', 'using', 'Geometric', 'Programming', '(', 'GP', ')', 'to', 'optimally', 'solve', 'the', 'problem', 'in', 'a', 'time', '-', 'slotted', 'period', '.'], ['b', ')', ',', 'this', 'regularization', 'induces', 'an', 'output', 'distribution', 'that', 'is', 'close', 'to', 'an', 'input', 'distribution', 'in', 'CT', 'values', ',', 'and', 'aims', 'to', 'ensure', 'that', 'the', 'generators', 'translate', 'the', 'sparse', 'artifacts', 'rather', 'than', 'dense', 'anatomical', 'structures', '.'], ['The', 'Principal', 'Component', 'Analysis', '(', 'PCA', ')', 'is', 'used', 'for', 'dimension', 'reduction', '.'], ['This', 'should', 'certainly', 'be', 'true', 'of', 'the', 'New', 'Technology', 'File', 'System', '(', 'NTFS', ')', ',', 'since', 'NTFS', 'is', 'currently', 'the', 'most', 'common', 'file', 'system', 'in', 'use', '.']], 'labels': [[4, 4, 4, 4, 0, 2, 2, 4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4], [4, 4, 4, 4, 4, 4, 1, 4, 4, 0, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4], [4, 4, 4, 4, 1, 4, 4, 4, 4, 1, 4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4, 1, 4, 4, 4, 4, 4], [4, 4, 4, 4, 1, 3, 3, 3, 4, 4, 4, 4, 4, 1, 4, 4, 4, 4, 4], [4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 2, 2, 4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4], [4, 4, 4, 4, 4, 4, 1, 4], [4, 4, 4, 4, 4, 4, 4, 0, 2, 4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4], [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4], [4, 0, 2, 2, 4, 1, 4, 4, 4, 4, 4, 4, 4], [4, 4, 4, 4, 4, 4, 4, 0, 2, 2, 2, 4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]]}

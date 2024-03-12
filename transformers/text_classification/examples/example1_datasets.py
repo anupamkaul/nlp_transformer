@@ -29,6 +29,21 @@ emotions = load_dataset("emotion")
 acronym_identification = load_dataset("acronym_identification")
 print(acronym_identification)
 
+'''
+these are like dicts (see example1.out) which each key corresponding to
+a different split. We can use usual dict syntax to return access to an individual
+split like so:
+'''
+
+train_ds = acronym_identification["train"]
+
+print("print the first row of training data: ")
+print(train_ds[0])   # print the first row
+
+print("\nprint the first 10 2nd elements..")
+print(train_ds[:10]) # iterate over the first 10 2nd elements..
+
+
 
 
 
