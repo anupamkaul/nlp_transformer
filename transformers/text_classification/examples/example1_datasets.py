@@ -47,6 +47,15 @@ print(train_ds["tokens"][:10]) # iterate over the first 10 2nd elements..
 print(train_ds["id"][:10]) # iterate over the first 10 2nd elements..
 print(train_ds["labels"][:10]) # iterate over the first 10 2nd elements..
 
+# moving to pandas dataframes
+
+print("\nshow dataframes usage (panda)\n")
+import pandas as pd
+
+acronym_identification.set_format(type="pandas")
+df = acronym_identification["train"][:]
+df.head()
+
 
 
 
