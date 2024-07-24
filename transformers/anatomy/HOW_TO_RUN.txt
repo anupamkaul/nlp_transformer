@@ -20,6 +20,13 @@ Downloading: 100%|████████████████████�
 <IPython.core.display.Javascript object>
 <IPython.core.display.Javascript object>
 
+(we get the above no-show because the 'show' function in Bertviz assuming this is rendering on a browser. 
+I could dump the data into a file and open that in a browser, but the code is here:
+
+/opt/anaconda3/lib/python3.11/site-packages/bertviz
+(this is where python installs stuff from requirements.txt)
+
+)
 
 
 
