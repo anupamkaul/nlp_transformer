@@ -1,0 +1,26 @@
+python step.py 
+⏳ Installing base requirements ...
+✅ Base requirements installed!
+⏳ Installing Git LFS ...
+✅ Git LFS installed!
+
+now run my code, e.g.
+python visualization.py  
+(e.g. 'from transformers import AutoTokenizer' executes)
+
+python visualization.py
+Downloading: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 48.0/48.0 [00:00<00:00, 30.6kB/s]
+Downloading: 100%|████████████████████████████████████████████████████████████████████████████████████████████████| 570/570 [00:00<00:00, 3.60MB/s]
+Downloading: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 226k/226k [00:00<00:00, 1.13MB/s]
+Downloading: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 455k/455k [00:00<00:00, 1.88MB/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 433/433 [00:00<00:00, 772822.82B/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████| 440473133/440473133 [00:51<00:00, 8504572.36B/s]
+<IPython.core.display.HTML object>
+<IPython.core.display.HTML object>
+<IPython.core.display.Javascript object>
+<IPython.core.display.Javascript object>
+
+
+
+
+
