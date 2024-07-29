@@ -7,6 +7,6 @@ classifier = pipeline("text-classification")
 
 import pandas as pd
 outputs = classifier(text)
-pd.DataFrame(outputs)
+print(pd.DataFrame(outputs))
 
 

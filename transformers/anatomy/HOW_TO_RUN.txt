@@ -39,6 +39,9 @@ Downloading: 100%|████████████████████�
 Downloading: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 226k/226k [00:00<00:00, 1.26MB/s]
 Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
 
+(https://stackoverflow.com/questions/28641542/export-pandas-dataframe-object-to-the-console)
+
+
 
 
 
